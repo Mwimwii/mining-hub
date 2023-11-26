@@ -288,6 +288,11 @@ p {
 .header-nav .navigation .navbar .navbar-brand-2 {
   display: none;
 }
+@media (max-width: 767px) {
+  .navbar-brand {
+    margin-left: 100px;
+  }
+}
 .header-nav .navigation .navbar .country-flag img {
   border: 5px solid #fff;
   border-radius: 6px;
@@ -1284,6 +1289,7 @@ p {
     line-height: 40px;
   }
 }
+
 .capture-area {
   width: 100vw;
   overflow: hidden;
@@ -1296,10 +1302,17 @@ p {
 .capture-area .container .col-12 {
   overflow: visible;
 }
+
 .capture-item {
-  background: #fff;
+  transition: 4s ease-in-out;
+  background: linear-gradient(to bottom, #fffbee, rgb(243, 229, 203));
   margin: 0 15px;
   margin-top: 35px;
+  border-radius: 10px;
+}
+.capture-item:hover {
+  bottom: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.09);
 }
 .capture-item .capture-thumb {
   background-color: transparent;
@@ -1311,10 +1324,6 @@ p {
 .capture-item .capture-content {
   padding: 40px 61px;
 }
-.capture-item .capture-content i {
-  color: #ffc000;
-  font-size: 60px;
-}
 .capture-item .capture-content .title {
   font-size: 20px;
   line-height: 30px;
@@ -1323,6 +1332,27 @@ p {
   padding-top: 30px;
   padding-bottom: 20px;
 }
+@media (max-width: 767px) {
+  .capture-item .capture-content {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .capture-item .capture-content .title {
+    font-size: 5px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #2e2e2e;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+}
+.capture-item .capture-content i {
+  color: #ffc000;
+}
+
 .capture-active {
   overflow: visible;
 }
@@ -1392,6 +1422,16 @@ p {
 @media (max-width: 767px) {
   .faq-area::before {
     width: 100%;
+  }
+}
+@media (min-width: 767px) {
+  .for-smallscreen {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .for-bigscreen {
+    display: none;
   }
 }
 .faq-area::after {
@@ -1711,7 +1751,7 @@ p {
   transform: translateY(-50%);
   background-image: url(../images/features-shape.jpg);
   width: 850px;
-  height: 600px;
+  height: 630px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .intro-area::before {

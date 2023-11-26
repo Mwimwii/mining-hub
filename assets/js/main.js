@@ -125,7 +125,7 @@ $(function () {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1.4,
+          slidesToShow: 1,
         },
       },
     ],
