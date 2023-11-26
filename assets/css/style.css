@@ -288,11 +288,11 @@ p {
 .header-nav .navigation .navbar .navbar-brand-2 {
   display: none;
 }
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .navbar-brand {
     margin-left: 100px;
   }
-}
+} */
 .header-nav .navigation .navbar .country-flag img {
   border: 5px solid #fff;
   border-radius: 6px;
